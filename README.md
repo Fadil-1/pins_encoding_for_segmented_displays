@@ -5,9 +5,9 @@ This repository contains a Python script to generate binary mappings for segment
 
 ## Features ##
 
-    *Supports any number of segments, provided the configuration files are set appropriately.
-    *Generates common cathode and common anode mappings.
-    *Saves the generated binary mappings to a file in different formats.
+    * Supports any number of segments, provided the configuration files are set appropriately.
+    * Generates common cathode and common anode mappings.
+    * Saves the generated binary mappings to a file in different formats.
 
 
 ## Segment Arrangements ##
