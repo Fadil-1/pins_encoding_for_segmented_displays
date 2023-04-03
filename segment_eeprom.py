@@ -131,26 +131,29 @@ class BinaryMappingGenerator:
         Character_n : Binary encoding
 
         Data can be saved in 8 formats: 
-
-        bin:  binary number excluding leading_zeros
+        
+        bin:    binary number excluding leading_zeros
         bin_s:  binary number with 0b signature excluding leading_zeros
         bin_z:  binary number including leading_zeros
         bin_sz: binary number with 0b signature including leading zeros
 
-        hex:  hexadecimal number excluding leading_zeros        
+        hex:    hexadecimal number excluding leading_zeros        
         hex_s:  hexadecimal number with 0x signature excluding leading_zeros
         hex_z:  hexadecimal number including leading_zeros
         hex_sz: hexadecimal number with 0x signature including leading zeros
 
         Ex: Consider n = 0b11011011 for a 14 segment display.
 
+            n = 0b11011011         in "bin" format
             n = 0b11011011         in "bin_s" format
             n = 0000000011011011   in "bin_z" format
             n = 0b0000000011011011 in "bin_sz" format
 
-            n = 0xdb               in "hex" format
-            n = 0x00db             in "semi_raw_hex" format
-            n = 00db               in "raw_hex" format
+            n = db                 in "hex" format
+            n = 0xdb               in "bin_s" format
+            n = 00db               in "hex_z" format
+            n = 0x00db             in "hex_sz" format
+
 
         To add more leading zeros for any reasons, set the z(extra_leading_zeros) argument.
         to however many more trailing zeros are needed.
