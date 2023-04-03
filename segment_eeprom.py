@@ -204,7 +204,7 @@ class BinaryMappingGenerator:
 if __name__ == '__main__':
     user_config_file = './input_files/user_config_14-segment_display.JSON'
     base_mapping_file = './input_files/base_mapping_14-segment_display.JSON'
-    output_file = './output_files/out.txt'
+    output_file = 'out.txt'
 
     generator = BinaryMappingGenerator(user_config_file, base_mapping_file, output_file)
     generated_mapping = generator.generate_binary_mapping(common= 'common_cathode')
